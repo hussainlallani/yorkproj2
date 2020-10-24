@@ -1,0 +1,92 @@
+.portfolio-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    width: 23%;
+    /*    float: left;*/
+    text-align: center;
+    background: #e20764;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    padding: 0.5%;
+    margin: 0.5%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 100pc
+}
+
+input[type="radio"][id="logo"]:checked + label {
+    background: #6666ff;
+}
+
+input[type="radio"][id="logo"]:checked ~ .user-interface,
+input[type="radio"][id="logo"]:checked ~ .web-design {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+input[type="radio"][id="user-interface"]:checked + label {
+    background: #3e64ff;
+}
+
+input[type="radio"][id="user-interface"]:checked ~ .logo,
+input[type="radio"][id="user-interface"]:checked ~ .web-design {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+input[type="radio"][id="web-design"]:checked + label {
+    background: #3e64ff;
+}
+
+input[type="radio"][id="web-design"]:checked ~ .logo,
+input[type="radio"][id="web-design"]:checked ~ .user-interface {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.tile {
+    width: 22%;
+    height: 22%;
+    float: left;
+    transition: all 1s;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+.web-design {}
+
+.web-design img {
+    height: 75%;
+    width: 75%;
+}
+
+.logo img {
+    background: #6666ff;
+    height: 75%;
+    width: 75%;
+}
+
+.user-interface img {
+    height: 75%;
+    width: 75%;
+}
+
+.user-interface {
+    /*    background: #ff4466;*/
+}

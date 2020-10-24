@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hussain Lallani | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+    <section id="page-top">
+        <header>
+            <img src="hl_logo.png" width="150px;height:10px; ">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img1.jpg" style="width: 238%;height: 97%;margin: 0% 0% 0% -69%;">
+                <div class="slide-caption">Graphic Design</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img2.jpg" style="width: 238%;height: 97%;margin: 0% 0% 0% -69%;">
+                <div class="slide-caption">User Interface Design</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img3.jpg" style="width: 238%;height: 97%;margin: 0% 0% 0% -69%;">
+                <div class="slide-caption">Web Design</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </section>
+
+    <main>
+
+        <section id="portfolio">
+            <br>
+            <br>
+            <br>
+            <h1 style="text-align:left;color: #3e64ff;margin: 0% 0% 2% 5%;font-family: fantasy;font-size: 80px;">PORTFOLIO</h1>
+
+            <div class="portfolio-container" style="{background-color: red}">
+                <input type="radio" id="logo" name="color" />
+                <label for="logo">LOGO</label>
+                <input type="radio" id="user-interface" name="color" />
+                <label for="user-interface">GUI</label>
+                <input type="radio" id="web-design" name="color" />
+                <label for="web-design">WEB DESIGN</label>
+                <input type="radio" id="reset" name="color" />
+                <label for="reset">RESET</label>
+
+                <div class="tile logo"><img src="logos/logo1.png"></div>
+                <div class="tile user-interface"><img src="gui/gui1.jpg"></div>
+                <div class="tile logo"><img src="logos/logo2.jpg"></div>
+                <div class="tile web-design"><img src="webdesign/webdesign1.jpg"></div>
+                <div class="tile logo"><img src="logos/logo3.png"></div>
+                <div class="tile user-interface"><img src="gui/gui2.jpg"></div>
+                <div class="tile user-interface"><img src="gui/gui3.jpg"></div>
+                <div class="tile web-design"><img src="webdesign/webdesign2.jpg"></div>
+                <div class="tile logo"><img src="logos/logo4.png"></div>
+                <div class="tile web-design"><img src="webdesign/webdesign3.jpg"></div>
+                <!--
+                <div class="tile user-interface"><img src="gui/gui4.jpg"></div>
+                <div class="tile web-design"><img src="webdesign/webdesign5.jpg"></div>
+                <div class="tile logo"><img src="logos/logo5.png"></div>      <div class="tile logo"><img src="logos/logo6.png"></div>
+-->
+                <div class="tile web-design"><img src="webdesign/webdesign4.jpg"></div>
+                <div class="tile user-interface"><img src="webdesign/webdesign5.jpg"></div>
+            </div>
+            <br>
+
+        </section>
+
+        <section id="resume"">
+        <br>
+        <h1 style=" text-align:left;color: #3e64ff;margin: 0% 0% 2% 5%;font-family: fantasy;font-size: 80px;">RESUME</h1>
+
+            <p id="resume-text" style="
+    color: black;             
+    margin: 10% 0% 0% 5%;
+    box-sizing: border-box;
+    background-color: rgba(120,120,120,0.6);
+    border-radius: 100px;
+    width: 89%;
+    padding: 2%;
+    font-size: 29px;
+    height: 19%;
+"> Hello! I'm John Smith. I'm a full-stack developer based in Toronto. <br><br>
+
+                Please download my resume for my projects and achievements.
+
+
+                <br><br><br><br>
+            <p id="resume-btn" style="
+    color: black;             
+    margin: 6% 0% 0% 40%;
+    box-sizing: border-box;
+    background-color: #3e64ff;
+    border-radius: 100px;
+    width: 15%;
+    padding: 2%;
+    font-size: 29px;
+"><a href="resume.docx">Download CV</a></p>
+            </p>
+        </section>
+
+        <section id="contact" style="height: 100%; width: 100%; background-color: #e1e4f3; padding: 20px;width: 100%; height: 60%;">
+            <h1 style=" text-align:left;color: #3e64ff;margin: 0% 0% 2% 5%;font-family: fantasy;font-size: 80px;">CONTACT</h1>
+
+            <div>
+                <form id="submit-form" onSubmit="if(!confirm('Is the form filled out correctly?')){return false;}">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <br>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                    <br>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your phone.." required>
+                    <br>
+                    <label for="option" required>Service</label>
+                    <select id="Service" name="Service">
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="user-interface">User-interface</option>
+                        <option value="web-design">Web Design</option>
+                    </select>
+                    <br><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; color:white">
+        <p>Hussain Lallani ©. All rights reserved 2020.</p>
+    </footer>
+    <script src=" slideshow.js">
+    </script>
+    <script src="portfolio_slideshow.js"></script>
+</body></html>
